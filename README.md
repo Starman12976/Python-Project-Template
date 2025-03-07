@@ -22,27 +22,7 @@ A robust, well-organized Python project template designed to serve as a solid fo
 - **Graceful Shutdown:**  
   Signal handling for SIGTERM and KeyboardInterrupt to ensure the application shuts down cleanly.
 
-## Project Structure
-
-src/ 
-  └── Assets/ 
-    └── Images/
-      └── Icons/
-      └── Textures/
-    └── Models/
-    └── Sounds/
-      └── Effects/
-      └── Music/
-    └── Text/
-      └── Scripts/ 
-    └── Videos
-    └── Settings/
-      └── program.json 
-  ├── checks.py 
-  ├── functions.py 
-  ├── main.py 
-  ├── program.py 
-  └── states.py
+## Getting Started
 
 ### Prerequisites
 
@@ -57,33 +37,33 @@ src/
    git clone https://github.com/yourusername/your-repo.git
    cd your-repo
 
-Customization
-Settings:
+### Customization
+- **Settings:**
 Modify src/Settings/program.json to configure options such as fullscreen mode, screen size, FPS, and controls.
 
-State Management:
+- **State Management:**
 Extend the state system by creating new state classes in src/states.py and updating the StateManager accordingly.
 
-Asset Organization:
+- **Asset Organization:**
 Place images, sounds, models, and scripts in the corresponding subdirectories within src/Assets/.
 
-Code Overview
-main.py:
+### Code Overview
+- **main.py:**
 The entry point of the program. It sets up logging, handles signals, and starts the main program loop.
 
-program.py:
+- **program.py:**
 Contains the Program class, which initializes Pygame, manages the main loop, and coordinates state transitions.
 
-states.py:
+- **states.py:**
 Implements a base State class for handling events, updating objects, and rendering, along with a sample MenuState and a StateManager.
 
-functions.py:
+- **functions.py:**
 Offers helper functions for tasks like loading settings, retrieving the display size, and mapping control keys.
 
-checks.py:
+- **checks.py:**
 Provides utility functions for validating object attributes, checking JSON validity, and ensuring file paths exist.
 
-Logging
+- **Logging:**
 Logs are configured in main.py and written to program.log. These logs capture events, errors, and debug messages to help you trace the application’s behavior.
 
 License
@@ -92,6 +72,8 @@ MIT License
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request with your proposed changes or improvements.
 
-Acknowledgments
-Pygame: For providing the tools necessary for creating interactive applications.
-Python Community: For continuous support and extensive resources. EOF echo "README.md file created at /mnt/data/README.md"
+### Acknowledgments
+- **Pygame:**
+For providing the tools necessary for creating interactive applications.
+- **Python Community:**
+For continuous support and extensive resources.
