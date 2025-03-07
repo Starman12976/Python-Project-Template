@@ -1,5 +1,3 @@
-%%bash
-cat << 'EOF' > /mnt/data/README.md
 # Python Project Template
 
 A robust, well-organized Python project template designed to serve as a solid foundation for interactive applications using Pygame. This template emphasizes modularity, clear state management, robust error handling, and comprehensive logging.
@@ -26,14 +24,25 @@ A robust, well-organized Python project template designed to serve as a solid fo
 
 ## Project Structure
 
-src/ ├── Assets/ │ ├── Images/ │ │ ├── Icons/ │ │ └── Textures/ │ ├── Models/ │ ├── Sounds/ │ │ ├── Effects/ │ │ └── Music/ │ ├── Text/ │ │ └── Scripts/ │ └── Videos/ ├── Settings/ │ └── program.json ├── checks.py ├── functions.py ├── main.py ├── program.py └── states.py
-
-markdown
-Always show details
-
-Copy
-
-## Getting Started
+src/ 
+  └── Assets/ 
+    └── Images/
+      └── Icons/
+      └── Textures/
+    └── Models/
+    └── Sounds/
+      └── Effects/
+      └── Music/
+    └── Text/
+      └── Scripts/ 
+    └── Videos
+    └── Settings/
+      └── program.json 
+  ├── checks.py 
+  ├── functions.py 
+  ├── main.py 
+  ├── program.py 
+  └── states.py
 
 ### Prerequisites
 
@@ -47,21 +56,7 @@ Copy
    ```bash
    git clone https://github.com/yourusername/your-repo.git
    cd your-repo
-Install dependencies:
 
-bash
-Always show details
-
-Copy
-pip install pygame
-Running the Program
-Execute the entry point from the project root:
-
-bash
-Always show details
-
-Copy
-python src/main.py
 Customization
 Settings:
 Modify src/Settings/program.json to configure options such as fullscreen mode, screen size, FPS, and controls.
@@ -93,7 +88,6 @@ Logs are configured in main.py and written to program.log. These logs capture ev
 
 License
 MIT License
-(Or include another license if applicable.)
 
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request with your proposed changes or improvements.
